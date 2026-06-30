@@ -7,13 +7,16 @@ Este repositório contém o projeto de **Machine Learning e Modelagem Preditiva*
 
 ### 📌 Principais Funcionalidades & Insights
 
-* **Pipelines de Produção Isolados:** Centralização de todas as etapas de pré-processamento via pipelines reprodutíveis para garantir o isolamento completo dos dados e evitar o vazamento de dados (*data leakage*).
-* **Tratamento Avançado de Outliers:** Implementação de um transformador customizado baseado em IQR integrado ao fluxo de validação cruzada, tratando dados extremos de forma automatizada.
-* **Tratamento de Alta Cardinalidade:** Resolução do desafio técnico da variável `model` (quase 1.900 classes) por meio da aplicação estratégica de *Target Encoding*, compactando a informação sem explodir a dimensionalidade.
-* **Torneio de Algoritmos com Validação Cruzada:** Avaliação comparativa robusta utilizando validação cruzada em 10 *folds* envolvendo 12 algoritmos concorrentes, revelando o sob-ajuste (*underfitting*) das abordagens lineares.
-* **Rejeição de Modelos Especialistas:** Validação experimental que refutou a hipótese de criar modelos separados por marca, provando que um modelo generalista unificado estabiliza melhor o aprendizado das regras de desvalorização.
-* **Otimização Híbrida de Hiperparâmetros:** Estratégia em duas etapas utilizando *RandomizedSearchCV* para varredura ampla, seguida por *GridSearchCV* local, reduzindo o tempo de varredura computacional para menos de 2 minutos.
-* **Apoio à Decisão via XGBoost:** Seleção do algoritmo campeão ponderando o erro comercial (MAPE de 23,20% no teste), controle de erros absolutos extremos (RMSE de USD 50.169,59) e tempo de treino de apenas 2 segundos.
+#### 🛠️ Engenharia de Atributos & Pré-processamento
+* **Imputação Lógica e Higienização:** Correção de tipos de dados e preenchimento de valores ausentes baseado no conhecimento extraído do *dataset* e em regras de negócio, evitando o descarte de linhas.
+* **Feature Engineering e Redução de Cardinalidade:** Criação da variável de idade do veículo, agrupamento estratégico de diversas variáveis com alta cardinalidade (como marcas e transmissões) e aplicação de *Target Encoding* para compactar os quase 1.900 modelos de carros.
+* **Estabilização da Variância:** Aplicação de escala logarítmica na variável alvo preço e filtragem seletiva de *outliers* via IQR, preservando os extremos reais de potência dos motores.
+
+#### 🤖 Modelagem & Otimização de Machine Learning
+* **Pipeline Reprodutível e Isolado:** Centralização de todo o pré-processamento e modelagem em um fluxo unificado, eliminando qualquer risco de vazamento de dados (*data leakage*).
+* **Torneio de Algoritmos:** Avaliação de 12 modelos concorrentes via validação cruzada (10-fold) que consolidou o domínio de *Ensembles* e revelou o *underfitting* severo das abordagens lineares.
+* **Rejeição de Modelos Especialistas:** Validação experimental que refutou a divisão do projeto por *tiers* de marcas, provando que o ganho marginal não justificava o aumento de complexidade na arquitetura.
+* **Otimização Híbrida e Eficiente:** Busca em duas etapas (*Random Search* + *Grid Search*) que localizou os melhores hiperparâmetros do XGBoost em menos de 2 minutos.
 
 ### 🛠 Tecnologias Utilizadas
 
