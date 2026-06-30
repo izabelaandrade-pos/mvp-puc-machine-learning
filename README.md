@@ -39,7 +39,7 @@ O projeto foi balizado por metas de negócio em relação ao *baseline* estatís
 | :--- | :--- | :--- | :--- | :--- |
 | **MAPE** (Principal) | Abaixo de 25,00% | 94,67% | **23,20%** | **Atingida** |
 | **RMSE** (Secundária) | Redução > 20,00% | USD 70.442,60 | **USD 50.169,59** ( -28,77% ) | **Atingida** |
-| **Tempo de Treino** | Baixo custo computacional | ~1,5 segundos | **~2 segundos** | **Atingida** |
+| **Tempo de Treino** | Baixo custo computacional | ~2 segundos | **~2 segundos** | **Atingida** |
 
 ### 🔧 Como Executar
 
