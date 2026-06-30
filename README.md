@@ -3,7 +3,7 @@ Repositório para documentação do MVP produzido na Sprint de Machine Learning 
 
 ## 🚗 Previsão de Preços de Veículos Usados (Modelagem & Otimização)
 
-Este repositório contém o projeto de **Engenharia de Machine Learning e Modelagem Preditiva** focado no mercado de carros usados dos EUA. O objetivo principal é construir, avaliar e otimizar modelos de regressão para automatizar a estimativa de preço de revenda, fornecendo uma ferramenta de apoio à decisão comercial rápida e precisa para vendedores individuais.
+Este repositório contém o projeto de **Machine Learning e Modelagem Preditiva** focado no mercado de carros usados dos EUA. O objetivo principal é construir, avaliar e otimizar modelos de regressão para automatizar a estimativa de preço de revenda, fornecendo uma ferramenta de apoio à decisão comercial rápida e precisa para vendedores individuais.
 
 ### 📌 Principais Funcionalidades & Insights
 
@@ -18,18 +18,19 @@ Este repositório contém o projeto de **Engenharia de Machine Learning e Modela
 ### 🛠 Tecnologias Utilizadas
 
 * **Linguagem:** Python 3.x
-* **Bibliotecas principais:** Scikit-learn, XGBoost, Imbalanced-learn, Pandas, NumPy.
+* **Bibliotecas de Machine Learning:** Scikit-learn, XGBoost, Imbalanced-learn (para construção do pipeline de dados).
+* **Análise e Visualização:** Pandas, NumPy, Matplotlib, Seaborn.
 * **Ambiente:** Google Colab (executado integralmente em nuvem via CPU gratuita).
 
 ### 📂 Estrutura do Projeto
 
 * `used_cars.csv`: Dataset original (espelhado do Kaggle/Cars.com).
-* `Sprint3_MVP_Machine_Learning.ipynb`: Notebook principal com o pipeline completo de engenharia, treinamento e otimização.
+* `Sprint3_MVP_Machine_Learning.ipynb`: Notebook principal com o pipeline completo de pré-processamento, treinamento e otimização.
 * `README.md`: Documentação do projeto.
 
 ### 🚀 Critérios de Sucesso & Resultados Encontrados
 
-O projeto foi balizado por metas rígidas de negócio em relação ao *baseline* estatístico ingênuo (Dummy Regressor baseado na mediana):
+O projeto foi balizado por metas de negócio em relação ao *baseline* estatístico ingênuo (Dummy Regressor baseado na mediana):
 
 | Métrica | Meta de Sucesso | Baseline (Dummy) | XGBoost Otimizado (Teste) | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -53,7 +54,7 @@ Caso prefira utilizar Jupyter Notebook ou VS Code localmente, certifique-se de t
 
 ### 📝 Nota Técnica: Fronteiras de Atuação do MVP
 
-Apesar do sucesso preditivo nos segmentos de volume, o MVP apresenta limitações conhecidas que delimitam suas fronteiras de atuação. Essa carência de dados explica por que o RMSE global foi severamente impactado pelo segmento de luxo. Isto ocorre devido à volatilidade inerente a esses ativos e à ausência de variáveis qualitativas no dataset original (como estado de conservação da pintura, tapeçaria e histórico de manutenção). Recomenda-se o uso automatizado do modelo para o segmento de volume e auditoria humana para veículos exóticos.
+Apesar do sucesso preditivo nos segmentos de volume, o MVP apresenta limitações conhecidas que delimitam suas fronteiras de atuação. O modelo encontra dificuldades no segmento de carros de luxo e exóticos devido à forte oscilação de preços típica desse nicho e à ausência de variáveis qualitativas no dataset original (como o estado de conservação do veículo e o histórico de manutenção mecânica). Essa carência de informações explica por que o RMSE global foi impactado por esse nicho específico, gerando cenários onde o uso automatizado do modelo deve ser restrito ao mercado de massa e acompanhado por auditoria humana para veículos de alto padrão.
 
 ### 📜 Licença
 
