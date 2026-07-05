@@ -38,7 +38,7 @@ O projeto foi balizado por metas de negócio em relação ao *baseline* estatís
 | Métrica | Meta de Sucesso | Baseline (Dummy) | XGBoost Otimizado (Teste) | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **MAPE** (Principal) | Abaixo de 25,00% | 94,67% | **23,81%** | **Atingida** |
-| **RMSE** (Secundária) | Redução > 20,00% | USD 70.442,60 | **USD 47.446,68** ( -28,77% ) | **Atingida** |
+| **RMSE** (Secundária) | Redução > 20,00% | USD 70.442,60 | **USD 47.446,68** ( -32,6% ) | **Atingida** |
 | **Tempo de Treino** | Baixo custo computacional | ~2 segundos | **~2,5 segundos** | **Atingida** |
 
 ### 🔧 Como Executar
