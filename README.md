@@ -14,7 +14,7 @@ Este repositório contém o projeto de **Machine Learning e Modelagem Preditiva*
 
 #### 🤖 Modelagem & Otimização de Machine Learning
 * **Pipeline Reprodutível e Isolado:** Centralização de todo o pré-processamento e modelagem em um fluxo unificado, eliminando qualquer risco de vazamento de dados (*data leakage*).
-* **Torneio de Algoritmos:** Avaliação de 12 modelos concorrentes via validação cruzada (10-fold) que consolidou o domínio de *Ensembles* e revelou o *underfitting* severo das abordagens lineares.
+* **Torneio de Algoritmos:** Avaliação de 12 modelos concorrentes via validação cruzada (10-fold) que consolidou o domínio de *Ensembles* e revelou a insuficiência preditiva das abordagens lineares.
 * **Rejeição de Modelos Especialistas:** Validação experimental que refutou a divisão do projeto por *tiers* de marcas, provando que o ganho marginal não justificava o aumento de complexidade na arquitetura.
 * **Otimização Híbrida e Eficiente:** Busca em duas etapas (*Random Search* + *Grid Search*) que localizou os melhores hiperparâmetros do XGBoost em menos de 2 minutos.
 
