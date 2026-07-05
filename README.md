@@ -37,23 +37,15 @@ O projeto foi balizado por metas de negócio em relação ao *baseline* estatís
 
 | Métrica | Meta de Sucesso | Baseline (Dummy) | XGBoost Otimizado (Teste) | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **MAPE** (Principal) | Abaixo de 25,00% | 94,67% | **23,20%** | **Atingida** |
-| **RMSE** (Secundária) | Redução > 20,00% | USD 70.442,60 | **USD 50.169,59** ( -28,77% ) | **Atingida** |
-| **Tempo de Treino** | Baixo custo computacional | ~2 segundos | **~2 segundos** | **Atingida** |
+| **MAPE** (Principal) | Abaixo de 25,00% | 94,67% | **23,81%** | **Atingida** |
+| **RMSE** (Secundária) | Redução > 20,00% | USD 70.442,60 | **USD 47.446,68** ( -28,77% ) | **Atingida** |
+| **Tempo de Treino** | Baixo custo computacional | ~2 segundos | **~2,5 segundos** | **Atingida** |
 
 ### 🔧 Como Executar
 
-#### Passo 1: Clonar o Repositório
+* **Opção 1 (Via Google Colab):** Clique no arquivo `Sprint3_MVP_Machine_Learning.ipynb` aqui no repositório. Na pré-visualização que se abrirá, clique no botão **Open in Colab** no topo da página para executar o projeto na nuvem de forma 100% automatizada e reprodutível.
 
-Execute o comando `git clone https://github.com/izabelaandrade-pos/mvp-puc-machine-learning.git` no seu terminal para baixar o projeto localmente.
-
-#### Passo 2: Execução no Google Colab
-
-Importe o arquivo `Sprint3_MVP_Machine_Learning.ipynb` diretamente para o ambiente do Google Colab. O notebook já está totalmente configurado para baixar o dataset via URL pública do GitHub de forma 100% automatizada e reprodutível, utilizando a semente fixa `SEED = 7`. Não há necessidade de uploads manuais ou chaves de API.
-
-#### Passo 3: Execução em Ambiente Local
-
-Caso prefira utilizar Jupyter Notebook ou VS Code localmente, certifique-se de ter o Python 3.x instalado junto com as bibliotecas contidas no ecossistema básico do Scikit-learn, além da biblioteca externa `xgboost`. O arquivo de dados `used_cars.csv` deve estar no mesmo diretório do notebook.
+* **Opção 2 (Ambiente Local):** Caso prefira rodar localmente (Jupyter ou VS Code), baixe o notebook e o arquivo `used_cars.csv` para o mesmo diretório e garanta a instalação do ecossistema do *Scikit-Learn* e da biblioteca *XGBoost*.
 
 ### 📝 Nota Técnica: Fronteiras de Atuação do MVP
 
